@@ -19,7 +19,7 @@ Startup Instructions
 
 Initial Setup
 -------------
-1. Install Ruby on Rails[http://railsapps.github.io/installrubyonrails-mac.html]
+1. [Install Ruby on Rails](http://railsapps.github.io/installrubyonrails-mac.html)
 ```
 brew install gpg
 brew install git
