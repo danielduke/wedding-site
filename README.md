@@ -16,6 +16,7 @@ Startup Instructions
 1. go do project dir, `./wedding-site`
 2. run `rails server`
 3. open your browser and go to [localhost:3000](http://localhost:3000)
+4. open your browser and go to [homepage](http://localhost:3000/home)
 
 Initial Setup
 -------------
