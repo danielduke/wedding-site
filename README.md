@@ -38,6 +38,6 @@ gem install nokogiri
 rvm use ruby-2.4.1@rails5.1 --create
 gem install rails
 ```
-2. (If you haven't already) Install Postgres, I like [Postgres.app](https://postgresapp.com/), but use what you like
+<!-- 2. (If you haven't already) Install Postgres, I like [Postgres.app](https://postgresapp.com/), but use what you like -->
 3. Clone this repo `git clone https://github.com/danielduke/wedding-site.git`
 4. run migrations, `rake db:migrate`
