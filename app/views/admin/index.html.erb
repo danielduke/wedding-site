@@ -1,0 +1,25 @@
+<h1>Admin Page</h1>
+
+<a href="/guest/new">Add Guest</a>
+
+<style> 
+  table, th, td {
+    border: 1px solid black;
+  }
+</style>
+
+<table style="width:50%">
+  <tr>
+    <th>RSVP Status</th>
+    <th>Name</th>
+    <th>Email</th> 
+    <th>Actions</th>
+  </tr>
+  <tr>
+    <% @guests.each do |guest| %>
+      <td><%= guest.status %></td>
+      <td><a href="/guest/<%= guest.id %>"><%= guest.name %></td>
+      <td><%= guest.email %></td> 
+    <% end %> 
+  </tr>
+</table>
