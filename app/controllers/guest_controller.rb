@@ -6,13 +6,13 @@ class GuestController < ActionController::Base
       redirect_to "/guest/verify" and return
     end
     
-    guest = Guest.where(code: code).first
+    guest = Guest.where(confirmation_code: code).first
 
     if guest.blank?
       redirect_to "/guest/verify" and return
     end
 
-    render json: Guest.all.to_json
+    render json: guest.to_json
   end
 
   def verify
