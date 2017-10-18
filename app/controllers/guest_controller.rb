@@ -1,4 +1,6 @@
 class GuestController < ActionController::Base
+  layout "application"
+
   def index
     code = params[:code] 
 
@@ -6,20 +8,13 @@ class GuestController < ActionController::Base
       redirect_to "/guest/verify" and return
     end
     
-    guest = Guest.where(confirmation_code: code).first
+    @guest = Guest.where(confirmation_code: code).first
 
-    if guest.blank?
+    if @guest.blank?
       redirect_to "/guest/verify" and return
     end
-
-    render json: guest.to_json
   end
 
   def verify
-    render json: Guest.all.to_json
-  end
-
-  def submit_verify
-    render json: Guest.all.to_json
   end
 end
